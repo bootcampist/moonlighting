@@ -1,0 +1,152 @@
+/* Styling for the contact section */
+.contact-container {
+    height: 90vh;
+    max-width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffefbf;
+    flex-wrap: wrap;
+    background-image: url(./images/moon02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    height: 90vh;
+}
+
+/* Styling for the contact details section */
+#details-section {
+    color: #ffefbf;
+}
+
+#details {
+    list-style: none;
+    padding-left:0;
+}
+
+#details a {
+    color: #ffefbf;
+    text-decoration: none;
+}
+
+#details a:hover {
+    color:white;
+}
+
+.details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(9, 18, 36,0.6);
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.details:hover{
+    opacity: 1;
+}
+
+/* Styling for the form section */
+#form-section {
+    background-color: rgb(9, 18, 36,0.0);
+    color: #ffefbf;
+}
+
+#form-section input, textarea{
+    border:none;
+    border-radius: 0;
+    background-color:transparent;
+    color: #ffefbf;
+    width: 40vw;
+    border-bottom: 1px solid #ffefbf;
+    height: 10vh;
+}
+
+textarea {
+    padding-top: 5vh;
+    font-family: sans-serif;
+}
+
+#form-section .btn {
+    background-color: transparent;
+    color: #ffefbf;
+    border: 1px solid #ffefbf;
+    border-radius: 0;
+    margin-top: 8vh;
+    width: 40vw;
+    height: 3rem;
+}
+
+#form-section .btn:hover {
+    background-color:#ffefbf;
+    color: #091123;
+    border: 1px solid #ffefbf;
+}
+
+::placeholder {
+    color: #ffefbf;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 1px solid #ffefbf;
+}
+
+/* Styling for smaller devices */
+@media only screen and (max-width: 930px) {   
+    .contact-container {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 651px) {   
+    .contact-container {
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-attachment: fixed;   
+        background-position: left;
+    }
+    
+    .contact-inner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 99vw;
+        height: 90vh;
+    }
+
+    #form-section input, textarea {
+        background-color:transparent;
+        width: 55vw;   
+    }
+
+    #form-section .btn {
+        width: 55vw;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {   
+    #form-section input, textarea {
+        background-color:transparent;
+        width: 80vw;   
+    }
+
+    #form-section .btn {
+        width: 80vw;
+        height: 3rem;
+    }
+}
+
