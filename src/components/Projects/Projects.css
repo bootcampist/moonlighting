@@ -1,0 +1,146 @@
+.projects-container {
+    min-height: 90vh;
+    width: 100vw;
+    background-color: rgb(36, 48, 71, 0.8);
+    color: rgb(255, 239, 191,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(255, 239, 191,0.5);
+}
+
+.projects-inner-container {
+    width: 99%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+}
+
+/* Styling for the title */
+#project-title {
+    font-weight: 700;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+/* Styling for the project cards */
+.project-cards {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;   
+    border: 1px solid #ffefbf;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    margin-left: 1vh;
+    margin-right: 1vh;  
+}
+
+.project-image {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the project information and links */
+.project-details{
+    height:100%;
+    width: 100%;
+    background-color: rgb(9, 18, 36, 0.9);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.project-details:hover {
+    opacity:1
+}
+
+.project-name {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.project-link-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+
+.project-link a {
+    width: 25%;
+    color: #ffefbf;
+    border: 1px solid #ffefbf;
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.7s;
+}
+
+.project-link a:hover {
+    background-color: #ffefbf;
+    color:#091123;
+    text-decoration: none;
+    border: 1px solid #091123;
+}
+
+.github-image {
+    margin-top: 10px;
+    width: 8%;
+    transition: opacity 0.5s;
+}
+
+.github-image:hover {
+    opacity: 0.3;
+}
+
+/* Styling for smaller devices */
+@media only screen and (max-width: 1024px) {   
+    .project-cards {
+        width: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;  
+        margin-left: 1vh;
+        margin-right: 1vh;  
+    }  
+}
+
+@media only screen and (max-width: 675px) {   
+    .project-cards {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;   
+        border: 1px solid #ffefbf;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;  
+        margin-left: 0vh;
+        margin-right: 0vh;  
+    }  
+}
