@@ -1,0 +1,71 @@
+/* Styling for the Header Section */
+.header-container {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(36, 48, 71, 0.5);
+    color: rgb(255, 239, 191,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-inner-container {
+    width: 99%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+}
+
+/* Styling for the Logo */
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 10%;
+    background-image: url(./images/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the Navigation Section */
+#nav {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: transparent;
+}
+
+.nav-links a {
+    background-color: transparent;
+    padding: 10px;
+    min-width: 10%;
+    border:rgb(36, 48, 71, 0.1) 1px solid;
+    text-decoration: none;
+    color: rgb(255, 239, 191,0.9);
+    transition: border 0.7s;
+}
+
+.nav-links:hover a {
+    padding:10px;
+    border:rgb(255, 239, 191,0.7) 1px solid;
+}
+
+nav-links #active {
+    padding:10px;
+    border:rgb(255, 239, 191,0.7) 1px solid;
+}
