@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Background Styling */
+body {
+  background-color: #091123;
+  background-image: url('./components/Home/images/moonscape.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100vw;
+}
+
+.root{
+  padding: 0;
+}
