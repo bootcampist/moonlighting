@@ -20,8 +20,8 @@
 
 /* Styling for the Introductory Section */
 #brand-box {
-    width: 31vw;
-    height: 27vw;
+    width: 44vw;
+    height: 40vw;
     background-color: rgb(9, 18, 36, 0.7);
     color: #ffefbf;
     display: flex;
@@ -29,30 +29,87 @@
     align-items: center;
 }
 
+
+
 #text {
-    width: 26vw;
-    height: 22vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 39vw;
+    height: 35vw;
     border: 1px solid #ffefbf;
     padding: 10px;
     font-size: 1.7vw;
 }
 
-/* Styling for Smaller Devices */
-@media only screen and (max-width: 700px) {
-    #brand-box {
-        width: 46vw;
-        height: 42vw;        
-    }
-    
-    #text {
-        width: 39vw;
-        height: 35vw;
-        font-size: 2.6vw;
-    }
+#image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15vw;
+    width: 15vw;
+    /* padding: 1vw; */
+    border: 1px solid rgb(255, 238, 189,0.9)
+}
+
+#text h1 {
+    font-size: 2em;
+    margin-bottom: 2px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.small {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+#text h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#text p {
+    font-size: 1em
+}
+
+.emphasis {
+    /* font-weight: 700; */
+    font-size: 1.6em;
+    font-style: italic;
 }
 
 /* Styling for Smaller Devices */
-@media only screen and (max-width: 510px) {   
+@media only screen and (max-width: 700px) {
+    #information {
+        width: 70vw;
+    }
+
+    #moon {
+        width: 30vw;
+    }
+
+    #brand-box {
+        width: 59vw;
+        height: 55vw;        
+    }
+
+    #image {
+        height: 20vw;
+        width: 20vw;
+    }
+    
+    #text {
+        width: 52vw;
+        height: 48vw;
+        font-size: 2.6vw;
+    }
+
+}
+
+/* Styling for Smaller Devices */
+@media only screen and (max-width: 500px) {   
     #information {
         width: 99vw;
     }
@@ -62,11 +119,16 @@
 
     #brand-box {
         width: 86%;
-        height: 62%;        
+        height: 82%;        
+    }
+
+    #image {
+        height: 25vh;
+        width: 25vh;
     }
     
     #text {
-        width: 79%;
+        width: 84%;
         height: 81%;
         font-size: 4vw;
     }

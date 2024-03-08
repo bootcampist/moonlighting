@@ -8,7 +8,7 @@ function Projects(props){
         <div className="projects-container">
             <div className="projects-inner-container">
                 <div id="project-title">
-                    <h2>Projects</h2>  
+                    <h1><span id="thin">Recent</span> Projects</h1>  
                 </div>
                 <div id="projects">
                     {props.children}

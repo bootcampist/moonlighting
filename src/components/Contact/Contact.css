@@ -1,31 +1,61 @@
 /* Styling for the contact section */
 .contact-container {
-    height: 90vh;
+    max-height: 90vh;
     max-width:100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid #ffefbf;
     flex-wrap: wrap;
-    background-image: url(./images/moon02.png);
+    background-image: url(./images/moon02.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .contact-inner-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffefbf;
+}
+
+#contact-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    margin-top: 1vh;
+}
+
+#contact-title h1 {
+        font-weight: 500;
+        font-size: 3em;
+}
+
+#contact-sections-container {
+    display: flex;
+}
+
+.contact-sections {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 49vw;
-    height: 90vh;
+    height: 80vh;
 }
 
 /* Styling for the contact details section */
 #details-section {
+    display: flex;
     color: #ffefbf;
 }
 
 #details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     padding-left:0;
 }
@@ -39,11 +69,60 @@
     color:white;
 }
 
-.details {
+.li-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icons {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #ffefbf;
+    margin: 20px 10px;;
+    background-color: rgb(9, 18, 36,0.4);
+    transition: transform 0.8s;
+}
+
+.contact-icons:hover{
+    transform: translateY(-7px);
+}
+
+#email {
+    background-image: url(./images/email1.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+#github {
+    background-image: url(./images/github.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+#linked-in {
+    background-image: url(./images/linkedin1.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+#cv {
+    background-image: url(./images/cv1.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+.details {  
     margin-top: 20px;
     padding: 10px;
     background-color: rgb(9, 18, 36,0.6);
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.8s;
 }
 
@@ -80,6 +159,7 @@ textarea {
     margin-top: 8vh;
     width: 40vw;
     height: 3rem;
+    font-size: 1.2rem;
 }
 
 #form-section .btn:hover {
@@ -103,28 +183,52 @@ textarea {
 /* Styling for smaller devices */
 @media only screen and (max-width: 930px) {   
     .contact-container {
-        background-position: center;
+        background-position: right;
     }
 }
 
 @media only screen and (max-width: 651px) {   
     .contact-container {
-        height: 180vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 170vh;
         background-size: cover;
         background-attachment: fixed;   
         background-position: left;
     }
+
+    #contact-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 26vh;
+        margin-top: 4vh;
+        padding: 20px;
+    }
     
-    .contact-inner-container {
+    #contact-title h1 {
+            font-weight: 500;
+            font-size: 3em;
+    }
+    
+
+    #contact-sections-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-sections {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 99vw;
-        height: 90vh;
+        height: 70vh;
     }
 
     #form-section input, textarea {
